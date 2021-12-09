@@ -1,0 +1,147 @@
+a{
+  text-decoration: none;
+}
+h1,p{
+  margin:0;
+}
+body{
+  width: 90%;
+  margin: 0 auto;
+}
+aside{
+  float: left;
+  width: 45%;
+  padding: 100px 0 0 0;
+}
+aside:first-of-type > p:first-of-type > strong{
+  display: block;
+}
+aside:first-of-type > h1{
+  padding: 20px 0;
+}
+aside:first-of-type > p:nth-of-type(2){
+  padding: 0 0 20px 0;
+}
+aside:first-of-type > p:nth-of-type(2) > strong{
+  display: block;
+}
+aside:first-of-type footer{
+  padding: 10px 0 0 0;
+}
+
+/* aside:last-of-type */
+aside:last-of-type{
+  margin-left: 5%;
+}
+aside:last-of-type ul{
+  list-style: none;
+}
+
+/* li 내부 content 정렬 */
+aside:last-of-type li:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+aside:last-of-type li > *{
+  float: left;
+  text-align: right;
+}
+aside:last-of-type li p strong{
+  display: block;
+  width: 100%;
+}
+aside:last-of-type li p{
+  width:70%;
+  overflow: hidden;
+}
+aside:last-of-type li a{
+  width: 30%;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+/* hover */
+aside:last-of-type li{
+  height: 50px;
+  padding: 0;
+  transition: height 1s, padding 1s;
+}
+aside:last-of-type li:hover{
+  height: 300px;
+  padding: 5% 10%;
+}
+aside:last-of-type li a::before{
+  content: "+";
+}
+aside:last-of-type li:hover a::before{
+  content: ">";
+}
+aside:last-of-type li:hover a{
+  color: #000;
+  line-height: inherit;
+}
+aside:last-of-type li p{
+  visibility: hidden;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 2s ,visibility 2s;
+}
+aside:last-of-type li:hover p{
+  visibility: inherit;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* line-height로 한거 */
+/* aside:last-of-type li{
+  height: 50px;
+  padding: 0;
+  transition-property: height, padding;
+  transition-duration: 1s, 1s ;
+  transition: height 0.5s linear, padding 0.5s linear;
+}
+aside:last-of-type li:hover{
+  height: 300px;
+  padding: 5% 3%;
+}
+aside:last-of-type li p{
+  opacity: 0;
+  line-height: 1px;
+  transition-property: opacity, line-height;
+  transition-duration: 0.5s, .5s;
+} 
+aside:last-of-type li:hover *:not(a){
+  opacity: 1;
+  line-height: 20px;
+}
+*/
+aside:last-of-type li:nth-of-type(1){
+  background-color: #b55;
+}
+aside:last-of-type li:nth-of-type(2){
+  background-color: #fbb;
+}
+aside:last-of-type li:nth-of-type(3){
+  background-color: #cc0;
+}
+aside:last-of-type li:nth-of-type(4){
+  background-color: #0a0;
+}
+aside:last-of-type li:nth-of-type(5){
+  background-color: #90f;
+}
+aside:last-of-type li:nth-of-type(6){
+  background-color: #40f
+}
+aside:last-of-type li:nth-of-type(7){
+  background-color: #b09;
+}
